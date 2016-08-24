@@ -49,10 +49,10 @@ public class WizardController extends HttpServlet{
             jspName = "viewAllWizards";
 
         } else if(jspName.equalsIgnoreCase("editWizard")) {
-            request.setAttribute("wizardCrestTypes", Wizard.WizardCrestType.values());
-            request.setAttribute("deathlyHallow", Wizard.DeathlyHallow.values());
             String wizardId = request.getParameter("wizardId");
             Wizard wizard = DataCacheJson.getWizard(wizardId);
+            request.setAttribute("wizardCrestTypes", Wizard.WizardCrestType.values());
+            request.setAttribute("deathlyHallow", Wizard.DeathlyHallow.values());
             request.setAttribute("wizard", wizard);
 
         }else if(jspName.equalsIgnoreCase("updateWizard")) {

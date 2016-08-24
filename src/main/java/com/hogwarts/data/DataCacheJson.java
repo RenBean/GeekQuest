@@ -87,7 +87,7 @@ public class DataCacheJson {
 
         String wizardId = System.currentTimeMillis()+"-bp";
         wizardsHashMap.put(wizardId,new Wizard(wizardId,"Rob","Perfect", Wizard.WizardCrestType.Hufflepuff,
-             Wizard.DeathlyHallow.Cloak, "limon"));
+                Wizard.DeathlyHallow.Cloak, "limon"));
 
         wizardId = System.currentTimeMillis()+"-bj";
         wizardsHashMap.put(wizardId,new Wizard(wizardId,"Bonnie","Jeckles", Wizard.WizardCrestType.Gryffindor,

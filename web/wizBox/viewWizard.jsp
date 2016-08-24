@@ -9,42 +9,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-
     <style>
-        table.center {
-            margin-left:auto;
-            margin-right:auto;
-        }
-        h1 {
-            text-align: center;
-        }
-        body {text-align:center;
-
-        }
-
-        *{
-
-            background-color: aliceblue;
-            text-align: center;
-        }
-        a:hover{
-            text-decoration: none;
-            color:gold;
-
-        }
-        a{
-            text-decoration: none;
-            color:dimgrey;
-
-        }
+        table {  margin-left:auto;  margin-right:auto; color: darkblue }
+        h1 {  text-align: center;  }
+        body {text-align:center;  }
+        *{  background-color: lightsteelblue;  text-align: center;  }
+        a:hover{  text-decoration: none;  color:rebeccapurple; font-weight: 500 }
+        a{  text-decoration: none;  color:darkblue; font-weight: 500 }
+        img {max-height: 220px}
     </style>
     <title>View Wizard</title>
-    <link rel="shortcut icon" href="/wizBox/Hogwarts.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/wizBox/HogwartsColor.png" type="image/x-icon" />
 </head>
 <body>
-
-View Wizard
-<br><br>
+View Wizard<br>
+<img src="/wizBox/HogwartsColor.png"/>
 <table>
     <tr>
         <td>Wizard ID:</td>
@@ -71,12 +50,9 @@ View Wizard
         <td><c:out value="${wizard.bean}" /></td>
     </tr>
 </table>
-<br><br>
-<a href="/">HOME</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="/Wiz/viewAllWizards">All Wizards</a>
-
-
-
+<br>
+<a href="/">HOME</a> <br>
+<a href="/Wiz/viewAllWizards">All Wizards</a> <br>
+<a href="/Wiz/editWizard">Edit Wizard</a>
 </body>
 </html>
